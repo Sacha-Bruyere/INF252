@@ -1,0 +1,39 @@
+- Quel est le chemin absolu de votre répertoire personnel ?
+
+/home/bruyeres/ubuntu
+
+- Que signifie ce symbole “&” placé à la fin d’une ligne de commande ?
+
+Il sert à ouvrir le programme.
+
+- Comment avez vous vérifié que le fichier a été créé ?
+
+ls - l
+
+- Quelles sont les informations affichées pour ce fichier ? Identifiez dans votre réponse sa date de création et ses droits d'accès.
+
+Droits d'accès : -rwx------ 
+Nombre de fichiers liés : 1 
+Créateur : bruyeres 
+Taille du fichier : 150 
+Date de création : janv. 28 10:45 
+Nom du fichier : copiedir.sh
+
+- Quel message d'erreur obtenez-vous?
+
+cp:target '/partage_etu/Science/INF/123_public/TP1/fich3' is not a directory
+
+- Quelle commande vous permet de vérifier que les droits d’accès sur ce fichier ont bien changé ? Faites-le et donnez la sortie vous permettant d'affirmer que les changements ont bien eu lieu.
+
+ls -l  -> -rwx------ signifie que l'utilisateur a les droits de lecture, modification et exécution du fichier.
+
+- Quel est le message d’erreur ? Notez-le.
+
+cp:target '/partage_etu/Science/INF/123_public/TP1/fich3' is not a directory
+
+- Expliquez ce que signifie le message d'erreur. Le terminal vous a-t-il dit qu'il manque le second argument ? Pourquoi ?
+
+
+
+
+
