@@ -60,14 +60,32 @@ ls -l, les dates sont différentes (heures différentes).
 
 Des ennuis fréquents et comment y remédier
 
-- copiedir.sh dans le mauvais répertoire :
+- Commande dans le mauvais répertoire (exemple utilisé : copiedir.sh dans TP1) :
 
 command not found, indique que la commande n'existe pas, il faut aller dans un dossier contenant copiedir.sh avec cd
 
-- faute d'orthographe dans le nom de la commande : 
+- Faute d'orthographe dans le nom de la commande : 
+
+command not found, indique que la commande n'existe pas, il faut bien orthographier la commande
+
+- Mauvais nombre d'arguments (exemple utilisé : cp fich1) :
+
+missing destination file operand after '\premier paramètre', indique que certains arguments ne sont pas renseignés, il faut rentrer le bon nombre d'arguments
+
+- Une faute d'orthographe dans un nom de fichier :
+
+annot stat '\path passé en paramètre' : No such file or directory, indique qu'un dossier ou fichier du chemin n'existe pas (ici, TP2), il faut bien orthographier le nom du fichier
+
+- Une faute d'orthographe dans un chemin d'accès (exemple utilisé : cp../TP2/copiedir.sh .)
+
+cannot stat '\path passé en paramètre' : No such file or directory, indique qu'un dossier ou fichier du chemin n'existe pas (ici, TP2), il faut bien orthographier le path
+
+Le message est le même car il s'agit de la même erreur (un endroit du chemin n'existe pas).
 
 
 
+
+ 
 
 
 
