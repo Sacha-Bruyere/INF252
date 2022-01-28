@@ -1,3 +1,5 @@
+github_PAT : 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
+
 - Quel est le chemin absolu de votre répertoire personnel ?
 
 /home/bruyeres/ubuntu
@@ -33,7 +35,43 @@ cp:target '/partage_etu/Science/INF/123_public/TP1/fich3' is not a directory
 
 - Expliquez ce que signifie le message d'erreur. Le terminal vous a-t-il dit qu'il manque le second argument ? Pourquoi ?
 
+Le message indique que fich3 n'est pas un dossier. Le terminal ne demande pas de second argument car l'astérisque à la fin de la commande [...]/123_public/TP1/* prend en compte tous les fichiers de TP1 (fich1, fich2 et fich3). Il prend donc en compte le dernier argument (fich3) comme destination, ce qui ne marche pas car fich3 n'est pas un dossier donc ne peut servir de destination.
 
+- Que signifie ce "." ? Dites aussi ce que désigne "..", et "~".
+
+ . designe le répertoire courant.
+ .. designe le répertoire parent du répertoire courant.
+ ~ designe le home directory.
+
+
+- Quel a été l’effet de l’exécution de cette commande ? Dites comment vous avez vérifié l'effet de cette commande.
+
+La commande créé un dossier TP1 dans le répertoire courant , va à l'intérieur puis y copie les fichiers contenus dans le répertoire public /partage_etu/Science/INF/123_public/TP1. On vérifie son bon fonctionnement en faisait ls -l (on voit que fich1, fich2 et fich3 sont bien présents) puis cd .. et ls -l pour vérifier que le dossier TP1 a été créé sans problèmes.
+
+- Donnez la commande utilisée pour faire cela.
+
+cd TP1bis
+cp /home/bruyeres/ubuntu/INF252/TP1/* .
+
+
+- Quelle commande avez vous utilisé ? Ces dates sont-elles les mêmes ?
+
+ls -l, les dates sont différentes (heures différentes).
+
+Des ennuis fréquents et comment y remédier
+
+- copiedir.sh dans le mauvais répertoire :
+
+command not found, indique que la commande n'existe pas, il faut aller dans un dossier contenant copiedir.sh avec cd
+
+- faute d'orthographe dans le nom de la commande : 
+
+
+
+
+
+
+   
 
 
 
