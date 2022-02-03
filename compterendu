@@ -14,7 +14,7 @@ ls - l
 
 - Quelles sont les informations affichées pour ce fichier ? Identifiez dans votre réponse sa date de création et ses droits d'accès.
 
-Droits d'accès : -rwx------ 
+Droits d'accès : rwx------ 
 Nombre de fichiers liés : 1 
 Créateur : bruyeres 
 Taille du fichier : 150 
@@ -83,13 +83,47 @@ cannot stat '\path passé en paramètre' : No such file or directory, indique qu
 Le message est le même car il s'agit de la même erreur (un endroit du chemin n'existe pas).
 
 
+- Une faute d'orthographe dans un chemin d'accès (exemple utilisé : cp ../TP2/copiedir.sh TP1/cop.sh)
 
+- cp ../copiedir.sh . créé une copie du fichier copiedir.sh dans le répertoire courant
 
- 
+-Tapez successivement sur les touches : copied<TAB>
 
+    Que s’affiche-t-il à l’écran ?
 
+	copiedir.sh
+    
+    Essayez de taper moins de caractères avant <TAB>.
 
+    Combien sont nécessaires ?
+	
+	Au moins 4 sont nécessaires (copiedir.sh et coproc présents dans le dossier).
+
+    Dupliquez copiedir.sh en un fichier nommé copain (cp copiedir.sh copain), et refaites 		 l’expérience ci-dessus.
+
+    Combien de caractères sont maintenant nécessaires ?
+	
+	Toujours 4.
+
+Tapez successivement sur les touches : cop<TAB><TAB>
    
+    Que voyez-vous ?
+	
+	Le nom des fichiers commencant par cop présents dans le répertoire courant.	
+
+Et que voyez-vous si vous tapez seulement : co<TAB><TAB>
+
+	Le nom des fichiers commencant par co.
+	
+<TAB><TAB> est très utile également pour se déplacer dans l’arborescence des répertoires et fichiers. Tapez par exemple :
+
+    ls /par<TAB><TAB><TAB>Sc<TAB>/I<TAB>123<TAB>TP<TAB><TAB>1<TAB><TAB>
+
+3. Certaines commandes sont longues et fastidieuses. On retrouve les commandes précédentes avec les touches “flèches en haut”.
+
+    Quelle était la quatrième précédente commande que vous aviez exécutée ?
+
+	cp copiedir.sh copain
 
 
 
